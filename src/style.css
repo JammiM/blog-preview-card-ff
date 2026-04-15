@@ -37,9 +37,11 @@
   width: min(90%, 400px);
   border-radius: 20px;
   padding: 20px;
+  transition: 0.3s;
 
-  & * {
-    /* border: 1px solid red; */
+  &:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 0px 0px #000000;
   }
 }
 
@@ -67,11 +69,11 @@
 
 .blogcard__heading {
   font-weight: var(--fw-bold);
-  font-size: clamp(1.5rem, 0.8rem + 1vw, 3rem);
+  font-size: clamp(1.5rem, 0.8rem + 1vw, 1.8rem);
+  transition: 0.3s;
 
   &:hover {
     color: var(--yellow);
-    cursor: pointer;
   }
 }
 
