@@ -1,4 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
 :root {
+  --yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+
+  --fs: 16px;
+  --ff-reg: "Figtree";
+
+  --fw-light: 500;
+  --fw-reg: 800;
+}
+
+#body {
+  font-family: var(--ff-reg), serif;
+  font-weight: var(--fw-reg);
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--yellow);
 }
 
 #main {
@@ -9,7 +30,12 @@
 }
 
 #blogcard {
-  border: 1px solid red;
-
+  border: 2px solid black;
+  background-color: var(--White);
   max-width: 100%;
+}
+
+#blogcard__learning {
+  border: 1px solid black;
+  background-color: var(--yellow);
 }
