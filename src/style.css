@@ -10,16 +10,17 @@
   --fs: 16px;
   --ff-reg: "Figtree";
 
-  --fw-light: 500;
-  --fw-reg: 800;
+  --fw-regular: 500;
+  --fw-bold: 800;
 }
 
 #body {
   font-family: var(--ff-reg), serif;
-  font-weight: var(--fw-reg);
+  font-weight: var(--fw-regular);
   font-optical-sizing: auto;
   font-style: normal;
   background-color: var(--yellow);
+  font-size: clamp(0.25rem, 0.8rem + 1vw, 1rem);
 }
 
 #main {
@@ -32,10 +33,56 @@
 #blogcard {
   border: 2px solid black;
   background-color: var(--White);
-  max-width: 100%;
+
+  width: min(90%, 400px);
+  border-radius: 20px;
+  padding: 20px;
+
+  & * {
+    /* border: 1px solid red; */
+  }
 }
 
-#blogcard__learning {
-  border: 1px solid black;
+.blogcard__thumbnail {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.blogcard__main_content {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10px;
+
+  align-items: start;
+  gap: 10px;
+}
+
+.blogcard__tags-learning {
   background-color: var(--yellow);
+  padding: 5px;
+  border-radius: 8px;
+  font-weight: var(--fw-bold);
+}
+
+.blogcard__heading {
+  font-weight: var(--fw-bold);
+  font-size: clamp(1.5rem, 0.8rem + 1vw, 3rem);
+
+  &:hover {
+    color: var(--yellow);
+    cursor: pointer;
+  }
+}
+
+.blogcard__description {
+  color: var(--Gray-500);
+}
+
+.blogcard__author {
+  display: flex;
+  flex-direction: row;
+  font-weight: var(--fw-bold);
+  align-items: center;
+  gap: 10px;
 }

@@ -21,32 +21,38 @@
             srcset="./src/assets/images/illustration-article.svg"
           />
           <img
+            class="blogcard__thumbnail"
             src="./src/assets/images/illustration-article.svg"
             alt="HTML &amp; CSS foundations thumbnail"
             srcset=""
           />
         </picture>
-        <span id="blogcard__learning">Learning</span>
 
-        <span> Published 21 Dec 2023 </span>
+        <section class="blogcard__main_content">
+          <div class="blogcard__tags">
+            <span class="blogcard__tags-learning">Learning</span>
+          </div>
 
-        <h1>HTML &amp; CSS foundations</h1>
+          <span> Published 21 Dec 2023 </span>
 
-        <p>
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
+          <h1 class="blogcard__heading">HTML &amp; CSS foundations</h1>
 
-        <div>
-          <picture>
-            <img
-              src="./src/assets/images/image-avatar.webp"
-              alt="Image of Greg Hooper"
-              srcset=""
-            />
-          </picture>
-          <span>Greg Hooper</span>
-        </div>
+          <p class="blogcard__description">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+
+          <div class="blogcard__author">
+            <picture>
+              <img
+                src="./src/assets/images/image-avatar.webp"
+                alt="Image of Greg Hooper"
+                srcset=""
+              />
+            </picture>
+            <span>Greg Hooper</span>
+          </div>
+        </section>
       </article>
     </main>
   </body>
