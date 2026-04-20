@@ -20,6 +20,7 @@ export default {
         "@morev/bem/no-chained-entities": true,
         "@morev/bem/no-side-effects": true,
         "@morev/bem/selector-pattern": true,
+        "selector-class-pattern": null,
       },
     },
   ],
