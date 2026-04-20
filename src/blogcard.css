@@ -1,9 +1,9 @@
 .blogcard {
   border: 2px solid black;
   background-color: var(--white);
-  width: min(90%, 400px);
+  width: min(90%, 25em);
   border-radius: 20px;
-  padding: 20px;
+  padding: max(1em, 1.25em);
   transition: var(--animation-speed);
 
   &:hover {

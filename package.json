@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "lint": "npx stylelint '**/*.css' --fix",
     "build": "vite build",
     "preview": "vite preview"
   },

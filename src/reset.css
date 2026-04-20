@@ -18,6 +18,13 @@ body {
 
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+
+  font-family: var(--ff-reg), serif;
+  font-weight: var(--fw-regular);
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--yellow);
+  font-size: clamp(0.25rem, 0.8rem + 1vw, 1rem);
 }
 
 /* 6. Improve media defaults */
@@ -75,16 +82,7 @@ h6 {
   --animation-speed: 0.3s;
 }
 
-#body {
-  font-family: var(--ff-reg), serif;
-  font-weight: var(--fw-regular);
-  font-optical-sizing: auto;
-  font-style: normal;
-  background-color: var(--yellow);
-  font-size: clamp(0.25rem, 0.8rem + 1vw, 1rem);
-}
-
-#main {
+.main {
   min-height: 100svh;
   display: grid;
   place-items: center;
