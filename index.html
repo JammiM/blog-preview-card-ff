@@ -16,13 +16,26 @@
     <main id="main">
       <article class="blogcard">
         <picture>
-          <source type="image/svg+xml" srcset="./illustration-article.svg" />
+          <source
+            type="image/svg+xml"
+            srcset="./src/assets/images/illustration-article.svg"
+          />
+
+          <source
+            type="image/jpeg"
+            srcset="./src/assets/images/illustration-article-small.jpg"
+          />
 
           <img
+            width="336"
+            height="201"
             class="blogcard__thumbnail"
-            src="./illustration-article.svg"
+            src="./src/assets/images/illustration-article.svg"
             alt="HTML &amp; CSS foundations thumbnail"
-            srcset="./illustration-article.svg"
+            srcset="
+              ./src/assets/images/illustration-article-small.jpg  375w,
+              ./src/assets/images/illustration-article.svg       1440w
+            "
           />
         </picture>
 
@@ -42,10 +55,25 @@
 
           <div class="blogcard__author">
             <picture>
+              <source
+                type="image/webp"
+                srcset="./src/assets/images/image-avatar.webp"
+              />
+
+              <source
+                type="image/webp"
+                srcset="./src/assets/images/image-avatar-small.webp"
+              />
+
               <img
+                width="64"
+                height="65"
                 src="./src/assets/images/image-avatar.webp"
                 alt="Image of Greg Hooper"
-                srcset=""
+                srcset="
+                  ./src/assets/images/image-avatar-small.webp  375w,
+                  ./src/assets/images/image-avatar.webp       1440w
+                "
               />
             </picture>
             <span>Greg Hooper</span>
